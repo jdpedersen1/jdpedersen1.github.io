@@ -198,8 +198,7 @@ nav ul li.active a {
     flex-wrap: wrap;
 }
 
-.box,
-.altbox {
+.box2 {
     background-color: rgba(255, 255, 255, 1.0);
     padding: 20px;
     margin-bottom: 30px;
@@ -207,12 +206,27 @@ nav ul li.active a {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.box:hover {
+.box {
+    background-color: rgba(255, 255, 255, 1.0);
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.altbox {
+    background-color: rgba(255, 255, 255, 1.0);
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.box2:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
-.box {
+.box,
+.box2 {
     width: 45%;
 }
 
@@ -221,26 +235,29 @@ nav ul li.active a {
 }
 
 .box img,
+.box2 img,
 .altbox img {
     width: 100%;
     height: auto;
 }
 
 .box p,
+.box2 p,
 .altbox p {
     font-weight: bold;
 }
 
-.box a {
+.box2 a {
     color: rgba(0, 0, 0, 1.0);
     text-decoration: none;
 }
 
-.box a:hover {
+.box2 a:hover {
     text-decoration: underline;
 }
 
 .box h3,
+.box2 h3,
 .altbox h3,h2 {
     margin-top: 0;
     font-size: 1.5rem;
@@ -253,6 +270,7 @@ nav ul li.active a {
 }
 
 .box h3::after,
+.box2 h3::after,
 .altbox h3::after,
 .altbox h2::after {
     content: ''; /* Required for pseudo-elements */
